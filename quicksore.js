@@ -1,2 +1,6 @@
 import {QuickScore} from "quick-score";
-window.QuickScore = QuickScore;
+if(!window.QuickScore){
+    window.QuickScore = QuickScore;
+}else{
+    window.$QuickScore = QuickScore;
+}
